@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Inclusiva | Sala de Aula Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegação -->
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="#" class="nav-brand">Educação Inclusiva</a>
+            <div class="nav-links">
+                <a href="https://poe.com/Professores.Suport" target="_blank" class="nav-link">
+                    <i class="fas fa-graduation-cap"></i> Portal de Professores
+                </a>
+                <a href="https://poe.com/Diversa" target="_blank" class="nav-link">
+                    <i class="fas fa-users"></i> Diversa
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="classroom-background">
+        <div class="bg-pattern"></div>
+        <div class="classroom-grid"></div>
+    </div>
+    
+    <!-- Animated Particles -->
+    <div class="particles-container" id="particlesContainer"></div>
+    
+    <!-- Classroom Decorations -->
+    <div class="classroom-decorations">
+        <div class="decoration decoration-1">
+            <i class="fas fa-puzzle-piece"></i>
+        </div>
+        <div class="decoration decoration-2">
+            <i class="fas fa-book"></i>
+        </div>
+        <div class="decoration decoration-3">
+            <i class="fas fa-hands"></i>
+        </div>
+        <div class="decoration decoration-4">
+            <i class="fas fa-brain"></i>
+        </div>
+        <div class="decoration decoration-5">
+            <i class="fas fa-universal-access"></i>
+        </div>
+        <div class="decoration decoration-6">
+            <i class="fas fa-sign-language"></i>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-element float-1">
+            <i class="fas fa-graduation-cap floating-icon"></i>
+        </div>
+        <div class="floating-element float-2">
+            <i class="fas fa-lightbulb floating-icon"></i>
+        </div>
+    </div>
+    
+    <!-- Teacher Character -->
+    <div class="teacher-container">
+        <div class="teacher-character">
+            <!-- Speech Bubble -->
+            <div class="speech-bubble">
+                <span class="speech-text">Bem-vindo à Educação Inclusiva!</span>
+                <span class="speech-cursor"></span>
+            </div>
+            
+            <!-- Teacher SVG - Premium Version -->
+            <svg class="teacher-svg" viewBox="0 0 280 400" xmlns="http://www.w3.org/2000/svg">
+                <!-- Base/Body -->
+                <path d="M140,200 Q100,220 90,300 L190,300 Q180,220 140,200" fill="url(#bodyGradient)" />
+                <defs>
+                    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#5667FF" />
+                        <stop offset="100%" stop-color="#7B4DFF" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Neck -->
+                <path d="M130,160 Q140,170 150,160 L150,200 L130,200 Z" fill="#FFBE85" />
+                
+                <!-- Head -->
+                <ellipse cx="140" cy="120" rx="60" ry="65" fill="#FFBE85" />
+                
+                <!-- Hair -->
+                <path d="M140,55 Q100,65 90,105 Q80,145 100,165 L115,160 L130,170 L150,170 L165,160 L180,165 Q200,145 190,105 Q180,65 140,55" fill="#663931" />
+                <path d="M100,105 Q120,95 140,100 Q160,95 180,105 Q190,115 180,125 Q160,135 140,130 Q120,135 100,125 Q90,115 100,105" fill="#663931" />
+                
+                <!-- Face -->
+                <circle cx="120" cy="110" r="5" fill="#333" />
+                <circle cx="160" cy="110" r="5" fill="#333" />
+                
+                <!-- Smile with gradient -->
+                <path d="M125,135 Q140,150 155,135" fill="none" stroke="#333" stroke-width="2.5" stroke-linecap="round" />
+                
+                <!-- Glasses - Modern Style -->
+                <rect x="108" y="105" width="25" height="12" rx="6" ry="6" fill="none" stroke="#333" stroke-width="2.5" />
+                <rect x="147" y="105" width="25" height="12" rx="6" ry="6" fill="none" stroke="#333" stroke-width="2.5" />
+                <line x1="133" y1="111" x2="147" y2="111" stroke="#333" stroke-width="2.5" />
+                <line x1="108" y1="111" x2="100" y2="105" stroke="#333" stroke-width="2" />
+                <line x1="172" y1="111" x2="180" y2="105" stroke="#333" stroke-width="2" />
+                
+                <!-- Left Arm -->
+                <path d="M90,210 Q50,230 40,270" fill="none" stroke="url(#armGradient)" stroke-width="24" stroke-linecap="round" />
+                <defs>
+                    <linearGradient id="armGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#5667FF" />
+                        <stop offset="100%" stop-color="#7B4DFF" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Right Arm (with animation) -->
+                <path class="hand" d="M190,210 Q230,180 260,190" fill="none" stroke="url(#armGradient)" stroke-width="24" stroke-linecap="round" />
+                
+                <!-- Interactive Board with Gradient -->
+                <rect x="190" y="150" width="70" height="50" rx="8" ry="8" fill="url(#boardGradient)" stroke="#555" stroke-width="1" />
+                <defs>
+                    <linearGradient id="boardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#3ECFC0" />
+                        <stop offset="100%" stop-color="#47E2BA" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Board Content -->
+                <line x1="200" y1="165" x2="250" y2="165" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                <line x1="200" y1="180" x2="240" y2="180" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                <circle cx="205" cy="180" r="2" fill="white" />
+                <circle cx="205" cy="165" r="2" fill="white" />
+                
+                <!-- Decorative Elements -->
+                <circle cx="225" cy="130" r="15" fill="url(#accentGradient)" opacity="0.9" />
+                <defs>
+                    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#FF6C5C" />
+                        <stop offset="100%" stop-color="#FF8F83" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    
+    <div class="falling-leaves-container" id="leavesContainer"></div>
+    <div class="fireflies" id="firefliesContainer"></div>
+    
+    <div class="page-container">
+        <header class="premium-header">
+            <div class="premium-tagline">Educação Inclusiva</div>
+            <div class="premium-title-wrapper">
+                <h1 class="premium-title">Educação para Todos</h1>
+            </div>
+            <p class="premium-subtitle">Recursos para professores que trabalham com alunos com deficiência</p>
+            
+            <div class="icon-divider">
+                <i class="fas fa-puzzle-piece" style="--i: 0"></i>
+                <i class="fas fa-hands" style="--i: 1"></i>
+                <i class="fas fa-graduation-cap" style="--i: 2"></i>
+                <i class="fas fa-universal-access" style="--i: 3"></i>
+            </div>
+        </header>
+        
+        <div class="quote-container">
+            <p class="premium-quote">Cada folha na árvore do conhecimento é única, assim como cada aluno em nossa sala de aula. A verdadeira inclusão celebra essa diversidade.</p>
+        </div>
+        
+        <p class="intro-text">Assim como as árvores da floresta compartilham nutrientes através de suas raízes, oferecemos recursos que nutrem sua prática pedagógica inclusiva, permitindo que todos os seus alunos possam crescer e florescer em seu próprio ritmo.</p>
+        
+        <!-- Seção: Plataformas e Recursos Educacionais -->
+        <section id="plataformas" class="resources-section">
+            <div class="category-header">
+                <div class="category-icon">🖥️</div>
+                <h2 class="category-title">Plataformas e Recursos Educacionais</h2>
+            </div>
+            <p class="category-description">Ferramentas e plataformas desenvolvidas para dar suporte à educação inclusiva de alunos com diferentes necessidades.</p>
+            
+            <div class="resources-grid" id="plataformasGrid">
+                <!-- Diversa -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-users-viewfinder resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://diversa.org.br/" target="_blank" rel="noopener" class="resource-link">Diversa</a>
+                        </h3>
+                        <p class="resource-description">
+                            Criado pelo Instituto Rodrigo Mendes, oferece conteúdos sobre educação inclusiva e práticas pedagógicas para alunos com deficiência.
+                        </p>
+                    </div>
+                    <i class="fas fa-users card-icon"></i>
+                </div>
+                
+                <!-- Portal do MEC -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-landmark resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://www.gov.br/mec/pt-br" target="_blank" rel="noopener" class="resource-link">Portal do MEC - Educação Especial</a>
+                        </h3>
+                        <p class="resource-description">
+                            Recursos oficiais do Ministério da Educação para apoiar professores na inclusão escolar.
+                        </p>
+                    </div>
+                    <i class="fas fa-landmark card-icon"></i>
+                </div>
+                
+                <!-- Nova Escola -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-school resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://novaescola.org.br/conteudos/educacao-inclusiva" target="_blank" rel="noopener" class="resource-link">Nova Escola - Educação Inclusiva</a>
+                        </h3>
+                        <p class="resource-description">
+                            Oferece artigos, planos de aula e experiências práticas para inclusão.
+                        </p>
+                    </div>
+                    <i class="fas fa-school card-icon"></i>
+                </div>
+                
+                <!-- Ler para Todos -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-book-reader resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://lerparatodos.org.br/" target="_blank" rel="noopener" class="resource-link">Ler para Todos</a>
+                        </h3>
+                        <p class="resource-description">
+                            Projeto de incentivo à leitura para crianças com deficiência visual e auditiva.
+                        </p>
+                    </div>
+                    <i class="fas fa-book-reader card-icon"></i>
+                </div>
+                
+                <!-- INES -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-hands resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://www.gov.br/ines/pt-br" target="_blank" rel="noopener" class="resource-link">INES - Instituto Nacional de Educação de Surdos</a>
+                        </h3>
+                        <p class="resource-description">
+                            Recursos e materiais para ensino da Língua Brasileira de Sinais (Libras).
+                        </p>
+                    </div>
+                    <i class="fas fa-hands card-icon"></i>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção: Recursos e Materiais Acessíveis -->
+        <section id="materiais" class="resources-section">
+            <div class="category-header">
+                <div class="category-icon">📚</div>
+                <h2 class="category-title">Recursos e Materiais Acessíveis</h2>
+            </div>
+            <p class="category-description">Materiais adaptados e acessíveis para alunos com diferentes necessidades de aprendizagem.</p>
+            
+            <div class="resources-grid" id="materiaisGrid">
+                <!-- Mais Diferenças -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-puzzle-piece resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://maisdiferencas.org.br/materiais-didaticos/" target="_blank" rel="noopener" class="resource-link">Mais Diferenças</a>
+                        </h3>
+                        <p class="resource-description">
+                            Plataforma especializada em conteúdos acessíveis e práticas pedagógicas para alunos com deficiência.
+                        </p>
+                    </div>
+                    <i class="fas fa-puzzle-piece card-icon"></i>
+                </div>
+                
+                <!-- Centro de Referências -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-graduation-cap resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://www.crp.org.br/inclusive" target="_blank" rel="noopener" class="resource-link">Centro de Referências em Educação Especial e Inclusiva</a>
+                        </h3>
+                        <p class="resource-description">
+                            Disponibiliza artigos e materiais adaptados para ensino inclusivo.
+                        </p>
+                    </div>
+                    <i class="fas fa-graduation-cap card-icon"></i>
+                </div>
+                
+                <!-- Bookshare -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-headphones resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://www.bookshare.org/cms/" target="_blank" rel="noopener" class="resource-link">Bookshare</a>
+                        </h3>
+                        <p class="resource-description">
+                            Biblioteca digital com livros acessíveis para alunos com deficiência visual ou dislexia.
+                        </p>
+                    </div>
+                    <i class="fas fa-headphones card-icon"></i>
+                </div>
+                
+                <!-- Fundação Dorina Nowill -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-braille resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://www.fundacaodorina.org.br/biblioteca-online" target="_blank" rel="noopener" class="resource-link">Baixe Livros Acessíveis - Fundação Dorina Nowill</a>
+                        </h3>
+                        <p class="resource-description">
+                            Livros e materiais gratuitos em braille, audiolivros e textos ampliados.
+                        </p>
+                    </div>
+                    <i class="fas fa-braille card-icon"></i>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção: Capacitação para Professores -->
+        <section id="capacitacao" class="resources-section">
+            <div class="category-header">
+                <div class="category-icon">🧑‍🏫</div>
+                <h2 class="category-title">Capacitação para Professores</h2>
+            </div>
+            <p class="category-description">Cursos e treinamentos para aprimorar suas habilidades e conhecimentos em educação inclusiva.</p>
+            
+            <div class="resources-grid" id="capacitacaoGrid">
+                <!-- Escola Digital -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-laptop-code resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://escoladigital.org.br/" target="_blank" rel="noopener" class="resource-link">Escola Digital - Educação Inclusiva</a>
+                        </h3>
+                        <p class="resource-description">
+                            Plataforma com cursos gratuitos sobre inclusão e ensino adaptado.
+                        </p>
+                    </div>
+                    <i class="fas fa-laptop-code card-icon"></i>
+                </div>
+                
+                <!-- Portal do Professor - MEC -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-chalkboard-teacher resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="http://portaldoprofessor.mec.gov.br/" target="_blank" rel="noopener" class="resource-link">Portal do Professor - MEC</a>
+                        </h3>
+                        <p class="resource-description">
+                            Disponibiliza planos de aula e recursos para educação especial.
+                        </p>
+                    </div>
+                    <i class="fas fa-chalkboard-teacher card-icon"></i>
+                </div>
+                
+                <!-- Fundação Lemann -->
+                <div class="premium-card">
+                    <div>
+                        <i class="fas fa-award resource-icon"></i>
+                        <h3 class="resource-title">
+                            <a href="https://fundacaolemann.org.br/aprendendo-sempre" target="_blank" rel="noopener" class="resource-link">Fundação Lemann - Aprendendo Sempre</a>
+                        </h3>
+                        <p class="resource-description">
+                            Oferece cursos gratuitos para capacitação de professores na inclusão educacional.
+                        </p>
+                    </div>
+                    <i class="fas fa-award card-icon"></i>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção destacada com CTA -->
+        <div class="highlight-section">
+            <h2 class="highlight-title">Acesse o Portal de Professores</h2>
+            <p class="highlight-text">Descubra mais recursos, ferramentas e comunidades para apoiar sua jornada na educação inclusiva. Junte-se a outros educadores dedicados a criar ambientes de aprendizado onde cada aluno possa florescer.</p>
+            <a href="https://poe.com/Professores.Suport" target="_blank" rel="noopener" class="premium-button">
+                Acessar o Portal
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+        
+        <footer class="premium-footer">
+            <p class="copyright">© <span class="copyright-year">2023</span> Educação Inclusiva | Todos os direitos reservados</p>
+            <p class="update-info">Atualizado em <span id="lastUpdate"></span></p>
+        </footer>
+    </div>
+    
+    <!-- Botão flutuante para o site central -->
+    <a href="https://poe.com/Professores.Suport" target="_blank" rel="noopener" class="portal-link">
+        <span>Portal de Professores</span>
+        <i class="fas fa-arrow-up-right-from-square"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
